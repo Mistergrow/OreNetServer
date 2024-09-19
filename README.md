@@ -1,14 +1,13 @@
 # OreNetServer
 
-**OreNetServer** ist ein zentraler Server für das Mining von Ore (ORE) auf der Solana-Blockchain. Der Server ist flexibel einsetzbar und kann sowohl im LAN als auch in globalen Netzwerken verwendet werden. OreNetServer verwaltet Mining-Clients, synchronisiert deren Aktivitäten und berechnet dynamische Transaktionsgebühren über verschiedene RPC-Dienste.
+**OreNetServer** ist ein flexibler Ore Mining-Pool-Server auf der Solana-Blockchain. OreNetServer ist sowohl im LAN als auch global nutzbar.
 
 ## Features
 
-- **LAN- und globaler Einsatz**: OreNetServer funktioniert sowohl in einem lokalen Netzwerk (LAN) als auch über das Internet, um Mining-Clients zu verwalten.
-- **Dynamische Transaktionsgebühren**: Unterstützt QuickNode, Helius und Alchemy zur Berechnung dynamischer Gebühren auf der Solana-Blockchain.
-- **Personalisierte Mining-Challenges**: Jede Mining-Session wird individuell optimiert, um faire Bedingungen für alle Miner zu gewährleisten.
-- **Benachrichtigungen in Echtzeit**: Echtzeit-Updates über Mining-Fortschritte und Mining-Ergebnisse über WebSockets und andere Benachrichtigungssysteme.
-- **Optimiert für Solana**: Der Server nutzt die Geschwindigkeit und Effizienz der Solana-Blockchain.
+- **LAN- und globaler Einsatz**: OreNetServer kann lokal (LAN) oder global über das Internet betrieben werden, um Mining-Clients zu verwalten.
+- **Dynamische Transaktionsgebühren**: Berechnung der Gebühren in Echtzeit basierend auf Daten von QuickNode, Helius und Alchemy, um die Effizienz des Mining-Prozesses zu maximieren.
+- **Multi-Threading für Audio-Benachrichtigungen**: Audio-Benachrichtigungen werden in separaten Threads ausgeführt, um die Performance des Servers zu erhalten.
+- **Webhooks für Benachrichtigungen**: Echtzeit-Benachrichtigungen über Slack und Discord für Mining-Fortschritte und Ergebnisse.
 
 ## Installation
 
@@ -22,5 +21,5 @@ Stelle sicher, dass Rust und die Solana-CLI installiert sind:
 Klone das Repository:
 
 ```bash
-git clone https://github.com/mistergrow/OreNetServer.git
+git clone https://github.com/username/OreNetServer.git
 cd OreNetServer
