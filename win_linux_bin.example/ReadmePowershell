@@ -1,0 +1,21 @@
+# OreNetServer Start Script (PowerShell)
+
+This PowerShell script loads environment variables from a `.env` file and starts the OreNetServer for mining Ore (ORE) on the Solana blockchain. It offers options to run in **Priority-fee mode** or **Dynamic-fee mode** and ensures that the server is automatically restarted in case of failure.
+
+## How it works:
+
+1. **.env File Loading**: The script reads a `.env` file and sets environment variables to configure the server.
+2. **Server Mode Selection**: Choose between two modes:
+   - **Priority-fee mode**: Sets fixed transaction fees.
+   - **Dynamic-fee mode**: Calculates dynamic transaction fees based on real-time data.
+3. **Error Loop**: If the server fails to start, the command will be retried in a loop.
+
+### Configuration:
+
+- Adjust the path to the `.env` file and the server executable before running the script.
+- The `.env` file should contain variables like `RPC_URL`, `WALLET_PATH`, `DYNAMIC_FEE_URL`, etc.
+
+### Execution:
+
+```powershell
+.\start-server.ps1
