@@ -1,5 +1,5 @@
 [package]
-name = "ore-private-pool-srv"
+name = "ore-net-srv"
 version = "0.5.1"
 edition = "2021"
 license = "Apache-2.0"
@@ -9,7 +9,7 @@ readme = "./README.md"
 keywords = ["solana", "crypto", "ore", "miraland", "mining-pool"]
 
 [[bin]]
-name = "ore-ppl-srv"
+name = "ore-net-srv"
 path = "src/main.rs"
 
 [dependencies]
