@@ -1,0 +1,26 @@
+### README für das Bash-Skript
+
+#### Name: `start-server.sh`
+
+```markdown
+# OreNetServer Start-Skript (Bash)
+
+Dieses Bash-Skript startet den OreNetServer für das Mining von Ore (ORE) auf der Solana-Blockchain. Es unterstützt den **Priority-fee mode** und den **Dynamic-fee mode** und versucht, den Server bei Fehlern automatisch neu zu starten.
+
+## Funktionsweise:
+
+1. **.env-Datei laden**: Das Skript importiert Variablen aus einer `.env`-Datei, um die Serverkonfiguration dynamisch zu gestalten.
+2. **Server-Modus Auswahl**: Du kannst zwischen zwei Modi wählen:
+   - **Priority-fee mode**: Arbeitet mit festen Transaktionsgebühren.
+   - **Dynamic-fee mode**: Dynamische Transaktionsgebühren basierend auf der aktuellen Netzwerkauslastung.
+3. **Automatischer Neustart**: Wenn der Server abstürzt, wird er automatisch neu gestartet.
+
+### Konfiguration:
+
+- Definiere den Pfad zur `.env`-Datei sowie den Speicherort der ausführbaren Server-Datei.
+- Die `.env`-Datei sollte alle erforderlichen Variablen wie `RPC_URL`, `WALLET_PATH`, `DYNAMIC_FEE_URL`, usw. enthalten.
+
+### Ausführung:
+
+```bash
+./start-server.sh
