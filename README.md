@@ -22,5 +22,5 @@ Stelle sicher, dass Rust und die Solana-CLI installiert sind:
 Klone das Repository:
 
 ```bash
-git clone https://github.com/username/OreNetServer.git
+git clone https://github.com/mistergrow/OreNetServer.git
 cd OreNetServer
