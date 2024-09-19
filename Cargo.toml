@@ -4,7 +4,7 @@ version = "0.5.1"
 edition = "2021"
 license = "Apache-2.0"
 description = "A lightweight release of Ore mining private pool server. derived from and credited to ore-hq-server."
-repository = "https://github.com/miraland-labs/ore-private-pool-srv"
+repository = "https://github.com/mistergrow/orenetserver"
 readme = "./README.md"
 keywords = ["solana", "crypto", "ore", "miraland", "mining-pool"]
 
