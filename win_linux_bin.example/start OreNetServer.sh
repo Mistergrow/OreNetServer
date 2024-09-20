@@ -4,12 +4,12 @@
 
 set -e
 
-SRV="$HOME/miner/ore-private-pool-srv/target/release/ore-ppl-srv"
+SRV="$HOME/PATH/TO/ORENETSERVER/target/release/ore-net-srv"
 MKP="$HOME/.config/solana/id.json"
 
 # .env import
 # Pfad zur .env-Datei
-envFilePath="$HOME/miner/ore-private-pool-srv/.env"
+envFilePath="$HOME/PATH/TO/.env"
 
 # Überprüfen, ob die .env-Datei existiert
 if [[ -f "$envFilePath" ]]; then
@@ -22,10 +22,6 @@ else
     exit 1
 fi
 
-# Dynamische Gebühren-URL setzen, falls aktiviert
-# Standardmäßige dynamische Gebühren-URL. Nächste Zeile auskommentieren, um dynamische Gebühren zu aktivieren
-# DYNAMIC_FEE_URL="https://api.devnet.solana.com/"
-
 BUFFER_TIME=5
 RISK_TIME=0
 PRIORITY_FEE=100
@@ -37,7 +33,7 @@ XTR_FEE_DIFF=29
 XTR_FEE_PCT=100
 
 # Wähle den Server-Modus
-echo "Ore Private Server"
+echo "Ore Net Server"
 echo "1) Priority-fee mode"
 echo "2) Dynamic-fee mode"
 read -p "Modus auswählen: " mode
