@@ -39,11 +39,8 @@ Write-Host "DISCORD:`t`t$([System.Environment]::GetEnvironmentVariable('DISCORD_
 $null = Read-Host 'Zum Fortfahren ENTER drücken'
 cls
 
-$SRV = "C:\path\to\your\ore-ppl-srv.exe"
-$MKP = "C:\path\to\your\Ore3.json"
-
-# Standardmäßige dynamische Gebühren-URL. Nächste Zeile auskommentieren, wenn du den dynamischen Modus aktivieren möchtest
-$DYNAMIC_FEE_URL = "https://example-rpc.solana.com/"
+$SRV = "C:\path\to\your\ore-net-srv.exe"
+$MKP = "C:\path\to\your\.json"
 
 $BUFFER_TIME = 6
 $RISK_TIME = 2
@@ -55,7 +52,7 @@ $XTR_FEE_DIFF = 29
 $XTR_FEE_PCT = 50
 
 # Wähle den Server-Modus
-$mode = Read-Host "Ore Private Server`nPriority-fee mode 1`nDynamic-fee mode 2`nModus auswählen:"
+$mode = Read-Host "Ore Net Server`nPriority-fee mode 1`nDynamic-fee mode 2`nModus auswählen:"
 
 switch ($mode) {
     1 {
