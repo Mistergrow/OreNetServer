@@ -14,7 +14,8 @@ path = "src/main.rs"
 
 [dependencies]
 thiserror = "1.0"
-axum = { version = "=0.7.2", features = ["macros", "ws"] }
+axum = { version = "0.7.2", features = ["macros", "ws", "tracing"] }
+axum-core = { version = "0.4.4", features = ["tracing"] }  # Updated to latest available version
 axum-extra = { version = "0.9.3", features = ["typed-header"] }
 base64 = "0.22.1"
 bincode = "1.3.3"
@@ -44,12 +45,11 @@ solana-transaction-status = "1.18.12"
 spl-associated-token-account = { version = "2.2", features = ["no-entrypoint"] }
 spl-token = { version = "4", features = ["no-entrypoint"] }
 tokio = { version = "1.39.2", features = ["full"] }
-tower = { version = "0.4.13", features = ["util"] }
 tower-http = { version = "0.5.2", features = ["trace", "cors"] }
 tracing = "0.1.40"
 tracing-appender = "0.2.3"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 url = "2.5"
 slack-messaging = "0.3.1"
-serenity = { version = "=0.11.7", default-features = false, features = ["rustls_backend", "model"] }
-zeroize = "=1.3.0"
+serenity = { version = "0.11.7", default-features = false, features = ["rustls_backend", "model"] }
+zeroize = "1.3.0"
